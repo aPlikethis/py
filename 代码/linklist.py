@@ -2,7 +2,7 @@ class Node():
     def __init__(self, elem):
         self.elem = elem
         self.next = None
-class Linklist():
+class LinkList():
     def __init__(self):
         self.head = None
     def add(self, elem):
@@ -10,11 +10,8 @@ class Linklist():
         node.next = self.head
         self.head = node
 
-linklist = Linklist()
-linklist.add(1)
-linklist.add(2)
-linklist.add(3)
-linklist.add(4)
+linklist = LinkList()
+
 while(linklist.head != None):
     print(linklist.head.elem)
     linklist.head = linklist.head.next

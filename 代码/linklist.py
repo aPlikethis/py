@@ -26,7 +26,7 @@ linklist = LinkList()
 while(1):
     data = {"name":0, "score":0}
     data["name"] = input()
-    if(data["score"] == "0"):
+    if(data["name"] == "0"):
         break
     else:
         data["score"] = int(input())
